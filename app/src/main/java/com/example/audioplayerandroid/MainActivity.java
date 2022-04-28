@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.audioplayerandroid.databinding.ActivityMainBinding;
 
+
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     MediaPlayer player;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (player == null) {
-                    player = MediaPlayer.create(getApplicationContext(), R.raw.app_src_main_res_raw_spiderman);
+                    player = MediaPlayer.create(getApplicationContext(), R.raw.himitsu);
 
                     player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
